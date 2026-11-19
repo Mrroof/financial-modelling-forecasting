@@ -1,3 +1,5 @@
+[![Portfolio validation](https://github.com/Mrroof/financial-modelling-forecasting/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/Mrroof/financial-modelling-forecasting/actions)
+
 # Financial Modelling and Forecasting
 
 > **Portfolio case study · Excel · scenario analysis · bank operating model**
