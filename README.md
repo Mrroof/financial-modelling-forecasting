@@ -1,22 +1,41 @@
 # Financial Modelling and Forecasting
 
-## Objective
-Build a three-scenario operating model to explore how deposit growth, lending growth, pricing, fee income and operating costs affect illustrative bank profitability.
+> **Portfolio case study · Excel · scenario analysis · bank operating model**
 
-## Included workbook
+## Executive summary
+A formula-driven 12-month bank operating model that compares downside, base and upside assumptions. The workbook demonstrates how balance-sheet growth, lending yields, deposit funding costs, fee income, operating expenses and impairment can flow through to illustrative profit before tax.
+
+## Business question
+How sensitive is projected bank profitability to changes in deposit growth, loan growth, pricing, fee income, operating expenses and impairment?
+
+## Workbook
 `model/financial_scenario_model.xlsx`
 
-## Workbook structure
-- **Assumptions:** starting balances and selected scenario drivers.
-- **Scenarios:** downside, base and upside assumptions.
-- **Operating Model:** 12-month projection of deposits, loans, interest income, funding expense, net interest income, fees, operating expenses, impairment and profit before tax.
-- **Guide:** model instructions and limitations.
+## Workbook map
+| Sheet | Purpose |
+|---|---|
+| Assumptions | Starting values and scenario selector |
+| Scenarios | Downside, base and upside driver assumptions |
+| Operating Model | Twelve monthly operating projections |
+| Guide | Instructions, definitions and limitations |
 
 ## How to use
-Open the workbook in Excel or a compatible spreadsheet application. Change the scenario selector in `Assumptions!B2` to `Downside`, `Base` or `Upside`. Update the starting values and scenario assumptions with appropriately sourced inputs. Formula cells are configured to recalculate when opened in a spreadsheet application.
+1. Open the workbook in Excel or a compatible spreadsheet application.
+2. Select `Downside`, `Base` or `Upside` in `Assumptions!B2`.
+3. Replace illustrative opening balances with appropriately sourced figures.
+4. Review and adjust assumptions on the Scenarios sheet.
+5. Review monthly deposits, loans, interest income, interest expense, net interest income, fees, expenses, impairment and profit before tax.
 
-## Data notice
-All opening balances and assumptions are **illustrative assumptions**, not actual bank figures or forecasts. Replace them with authorized, sourced inputs before drawing business conclusions.
+## Core calculation logic
+- Closing deposits = opening deposits × (1 + deposit growth)
+- Closing loans = opening loans × (1 + loan growth)
+- Monthly interest income = closing loans × lending yield ÷ 12
+- Monthly interest expense = closing deposits × deposit cost ÷ 12
+- Net interest income = interest income − interest expense
+- Profit before tax = net interest income + fee income − operating expenses − impairment
 
 ## Analytical considerations
-Document the source and date of each assumption, distinguish nominal from real growth, and test sensitivity to rates, funding costs, impairment and operating expenses. This workbook is an educational model, not investment or credit advice.
+A robust bank model should document assumption sources and dates, distinguish average from closing balances, model repricing and maturity profiles, account for non-performing loans and impairment methodology, and test sensitivities. This workbook is a learning template rather than a fully validated bank forecast.
+
+## Data and usage notice
+All opening balances and assumptions are illustrative, not actual bank figures or forecasts. Do not use the workbook for business decisions without replacing assumptions, checking formula logic against accounting policies and validating outputs with qualified reviewers.
