@@ -52,3 +52,22 @@ model/financial_scenario_model.xlsx   # Main scenario-driven workbook
 ## Review checklist
 
 Before adapting the workbook for a real organisation, confirm the period conventions, opening-balance definitions, interest calculation basis, scenario assumptions, and links between schedules. Recalculate the workbook in a spreadsheet application after changing assumptions and independently review key formulas.
+
+## Analytical insights and decision use
+
+The workbook is designed to show how a change in operating assumptions flows through a 12-month projection. The key management question is not simply which scenario produces the highest profit, but which assumptions explain the difference between scenarios.
+
+Useful relationships to review include:
+
+- Deposit growth and deposit cost: faster liability growth may support funding capacity, but the cost of those deposits affects net interest income.
+- Loan growth and lending yield: asset growth can increase interest income, subject to funding, pricing and credit quality.
+- Fee income: diversification can support earnings beyond interest income.
+- Operating expenses and impairment: cost growth and credit losses can offset revenue gains.
+
+## Practical recommendations
+
+1. Start with a documented base case and identify the source, owner and date for every material assumption.
+2. Change one driver at a time to understand sensitivity before combining multiple downside assumptions.
+3. Compare the scenarios using profit before tax, net interest income, cost growth and impairment—not just closing balances.
+4. Add checks for balance consistency, sign conventions, formula errors and unrealistic growth assumptions.
+5. Recalculate in Excel and independently review key formulas before relying on the workbook. All scenario outputs remain illustrative until assumptions are replaced and validated.
