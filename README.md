@@ -41,3 +41,14 @@ A robust bank model should document assumption sources and dates, distinguish av
 
 ## Data and usage notice
 All opening balances and assumptions are illustrative, not actual bank figures or forecasts. Do not use the workbook for business decisions without replacing assumptions, checking formula logic against accounting policies and validating outputs with qualified reviewers.
+
+## Repository structure
+
+```text
+model/financial_scenario_model.xlsx   # Main scenario-driven workbook
+.github/workflows/                    # Automated workbook validation
+```
+
+## Review checklist
+
+Before adapting the workbook for a real organisation, confirm the period conventions, opening-balance definitions, interest calculation basis, scenario assumptions, and links between schedules. Recalculate the workbook in a spreadsheet application after changing assumptions and independently review key formulas.
